@@ -1,0 +1,95 @@
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(27, 27, 63);
+}
+
+#myH1{
+    font-size: 4rem;
+    font-family: sans-serif;
+    color: aliceblue;
+    padding-bottom: 20px;
+}
+
+ /* this cotainer includes Stopwatch and control buttons */
+#container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: aliceblue;
+}
+
+#display{
+    font-size: 3rem;
+    display: flex;
+    align-items: center;
+    padding: 30px;
+    font-family: sans-serif;
+    margin-bottom: 25px;
+    width: 250px;
+    height: 250px;
+    color: rgb(150, 61, 233);
+    background-color: rgb(21, 21, 48);
+    border-radius: 50%;
+    animation: focus 2s ease  infinite alternate forwards;
+}
+
+@keyframes focus{
+    from{
+        box-shadow: 0 0 20px .1px greenyellow;
+
+    }
+    to{
+        box-shadow: 0 0 0px 0px greenyellow;
+    }
+}
+
+
+#controls button{
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 10px 20px;
+    min-width: 125px;
+    cursor: pointer;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 80px;
+    margin: 15px;
+}
+
+#controls > #startBtn{
+    background-color: rgb(27, 27, 63); 
+    color: rgb(255, 255, 255);
+}
+
+#controls > #startBtn:hover:hover{
+    box-shadow: 0 0 10px 1px rgb(225, 153, 20);
+    color: rgb(225, 153, 20); 
+}
+
+#controls > #resetBtn:hover{
+    box-shadow: 0 0 10px 1px rgb(225, 153, 20);
+    color: rgb(225, 153, 20);
+}
+
+
+#controls > #stopBtn:hover{
+    box-shadow: 0 0 10px 1px rgb(225, 153, 20);
+    color: rgb(225, 153, 20); 
+}
+
+
+#controls > #stopBtn{
+    background-color: rgb(27, 27, 63); 
+    color: rgb(255, 255, 255);  
+}
+
+#controls > #resetBtn{
+    background-color: rgb(27, 27, 63); 
+    color: rgb(255, 255, 255);   
+}
+
+
+
+
